@@ -12,6 +12,8 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Shop.UI
 {
+    using Microsoft.EntityFrameworkCore;
+    using Shop.Database;
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -31,6 +33,9 @@ namespace Shop.UI
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
