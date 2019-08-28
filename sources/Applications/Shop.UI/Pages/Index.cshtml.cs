@@ -7,7 +7,8 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Shop.UI.Pages
 {
-    using Shop.Applications.Products;
+    using Shop.Applications.CreateProducts;
+    using Shop.Applications.GetProducts;
     using Shop.Database;
 
     public class IndexModel : PageModel
@@ -19,9 +20,11 @@ namespace Shop.UI.Pages
             _ctx = ctx;
         }
         [BindProperty]
-        public ProductViewModel Product { get; set; }  
+        public Applications.CreateProducts.ProductViewModel Product { get; set; }  
+        public IEnumerable<Applications.GetProducts.ProductViewModel> Products { get; set; }
         public void OnGet()
         {
+            Products = new GetProducts(_ctx).Do();
         }
 
         public async Task<IActionResult> OnPost()
