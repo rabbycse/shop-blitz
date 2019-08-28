@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Shop.Applications.Products
+namespace Shop.Applications.CreateProducts 
 {
+    using Shop.Applications.GetProducts;
     using Shop.Database;
     using Shop.Domain.Models;
     public class CreateProduct
@@ -29,11 +30,12 @@ namespace Shop.Applications.Products
             await _contex.SaveChangesAsync(); 
         }
 
-        public class ProductViewModel
-        {
-            public string Name { get; set; }
-            public string Description { get; set; }
-            public decimal Value { get; set; }
-        }
+    }
+
+    public class ProductViewModel
+    {
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public decimal Value { get; set; }
     }
 }
