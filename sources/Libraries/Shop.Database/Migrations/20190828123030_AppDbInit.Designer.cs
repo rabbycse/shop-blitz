@@ -10,8 +10,8 @@ using Shop.Database;
 namespace Shop.Database.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20190823145438_DbInit")]
-    partial class DbInit
+    [Migration("20190828123030_AppDbInit")]
+    partial class AppDbInit
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

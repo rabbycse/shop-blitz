@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Shop.Database.Migrations
 {
-    public partial class DbInit : Migration
+    public partial class AppDbInit : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
