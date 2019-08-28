@@ -16,6 +16,7 @@
 
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\Shop.Applications\Shop.Applications.csproj" />
     <ProjectReference Include="..\..\Libraries\Shop.Database\Shop.Database.csproj" />
   </ItemGroup>
 
