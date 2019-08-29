@@ -4,38 +4,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Shop.Applications.CreateProducts 
+namespace Shop.Applications.ProductsAdmin 
 {
-    using Shop.Applications.GetProducts;
     using Shop.Database;
     using Shop.Domain.Models;
     public class CreateProduct
     {
-        private ApplicationDbContext _contex;
+        private ApplicationDbContext _context;
 
         public CreateProduct(ApplicationDbContext context)
         {
-            _contex = context;
+            _context = context;
         }
 
         public async Task Do(ProductViewModel vm)
         {
-            _contex.Products.Add(new Product
+            _context.Products.Add(new Product
             {
                 Name = vm.Name,
                 Description = vm.Description,
                 Value = vm.Value
             });
 
-            await _contex.SaveChangesAsync(); 
+            await _context.SaveChangesAsync(); 
         }
-
+        public class ProductViewModel
+        {
+            public string Name { get; set; }
+            public string Description { get; set; }
+            public decimal Value { get; set; }
+        }
+        
     }
 
-    public class ProductViewModel
-    {
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public decimal Value { get; set; }
-    }
 }
