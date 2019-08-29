@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Shop.Applications.Products 
+namespace Shop.Applications.ProductsAdmin 
 {
     using Database;
-    public class GetProducts 
+    public class GetProducts
     {
         private ApplicationDbContext _context;
 
@@ -18,18 +18,18 @@ namespace Shop.Applications.Products
 
         public IEnumerable<ProductViewModel> Do() =>
          _context.Products.ToList().Select(x => new ProductViewModel
-        {
-            Id = x.Id,
-            Name = x.Name,
-            Description = x.Description,
-            Value = $"£ {x.Value.ToString("N2")}", //1100.0 => 1,100.50 => £ 1,100.50
+         {
+             Id = x.Id,
+             Name = x.Name,
+             Description = x.Description,
+             Value = x.Value,
          });
         public class ProductViewModel
         {
             public int Id { get; set; }
             public string Name { get; set; }
             public string Description { get; set; }
-            public string Value { get; set; }
+            public decimal Value { get; set; }
         }
     }
 
