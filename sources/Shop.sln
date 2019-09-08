@@ -9,17 +9,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C64C2900-D0DF-4F70-8AF0-76B07D30A96A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.UI", "Applications\Shop.UI\Shop.UI.csproj", "{ED9BA0FC-3EFE-4445-88A2-3D940D2DA9BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.UI", "Applications\Shop.UI\Shop.UI.csproj", "{ED9BA0FC-3EFE-4445-88A2-3D940D2DA9BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Domain", "Libraries\Shop.Domain\Shop.Domain.csproj", "{B99945FA-D469-469F-84B0-CF4B63F1864E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.Domain", "Libraries\Shop.Domain\Shop.Domain.csproj", "{B99945FA-D469-469F-84B0-CF4B63F1864E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Applications", "Libraries\Shop.Applications\Shop.Applications.csproj", "{9C58437B-FEBB-4704-8686-B1F8E979F798}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.Applications", "Libraries\Shop.Applications\Shop.Applications.csproj", "{9C58437B-FEBB-4704-8686-B1F8E979F798}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Application.Tests", "Tests\Shop.Application.Tests\Shop.Application.Tests.csproj", "{F126C2D5-7165-441D-8338-A0382195D08E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.Application.Tests", "Tests\Shop.Application.Tests\Shop.Application.Tests.csproj", "{F126C2D5-7165-441D-8338-A0382195D08E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Domain.Tests", "Tests\Shop.Domain.Tests\Shop.Domain.Tests.csproj", "{83391047-0649-4DDA-9765-3502AC90DA4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.Domain.Tests", "Tests\Shop.Domain.Tests\Shop.Domain.Tests.csproj", "{83391047-0649-4DDA-9765-3502AC90DA4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Database", "Libraries\Shop.Database\Shop.Database.csproj", "{E3239091-3129-454D-A155-26BBAA5749CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.Database", "Libraries\Shop.Database\Shop.Database.csproj", "{E3239091-3129-454D-A155-26BBAA5749CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
